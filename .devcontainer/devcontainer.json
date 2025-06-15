@@ -1,0 +1,17 @@
+// .devcontainer/devcontainer.json  ⭐ 完全版
+{
+  "name": "lab_ai_agent (py312)",
+  "build": { "context": "..", "dockerfile": "../Dockerfile" },
+  "remoteUser": "root",
+
+  // .env → /etc/profile.d/ ＆ ~/.bashrc の両方へ書き込む
+  "postCreateCommand": "bash -c 'if [[ -f .env ]]; then grep -v \"^#\" .env | sed \"s/^/export /\" | tee /etc/profile.d/openai_env.sh >> /root/.bashrc; fi'",
+
+  "forwardPorts": [8888],
+
+  "extensions": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-toolsai.jupyter"
+  ]
+}

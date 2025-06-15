@@ -1,8 +1,49 @@
-# Python
+# ---------- Python byte-code ----------
 __pycache__/
 *.py[cod]
-.env
-# Virtual env
+
+# ---------- Virtual environments ----------
 .venv/
-# Data & embeddings
+.env
+*.env
+
+# ---------- Project data / embeddings ----------
 data/
+
+# ---------- Notebooks ----------
+.ipynb_checkpoints/
+
+# ---------- Logs ----------
+logs/
+*.log
+
+# ---------- Large / binary assets ----------
+# 画像
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.tif
+*.tiff
+*.bmp
+*.svg
+
+# 数値・モデルデータ
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.parquet
+*.pkl
+*.pickle
+
+# 表形式データ
+*.csv
+*.tsv
+*.xls
+*.xlsx
+
+# ---------- OS / Editor cruft ----------
+.DS_Store
+Thumbs.db
+

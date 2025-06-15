@@ -1,6 +1,33 @@
+# --- LLM 関連 ---
+openai>=1.23.0
+langchain>=0.2.0
+langchain-community>=0.2.0
+tiktoken>=0.6.0
+langchain-openai>=0.0.6
+
+# --- RAG (埋め込み & ベクトル DB) ---
+chromadb>=0.4.24
+python-dotenv>=1.0.1
+
+# --- 文書解析 ---
+PyPDF2>=3.0.1
+unstructured[local-inference]>=0.12.5
+
+# --- 可視化・数値計算 ---
+matplotlib>=3.8.4
+numpy>=1.26.4          # ←★追加
+scipy>=1.13.0          # ←★追加
+
+# --- 補助 ---
+tqdm>=4.66.4
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+slack_sdk>=3.27.0      # ←★追加
+pyperclip>=1.8.2       # ←★追加
 openai>=1.23.0
 chromadb>=0.4.24
 langchain>=0.2.0
 python-dotenv>=1.0.1
 tqdm
 matplotlib
+jupyter
