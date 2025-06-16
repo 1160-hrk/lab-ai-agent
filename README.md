@@ -1,4 +1,4 @@
-# lab_ai_agent
+# lab-ai-agent
 研究室向け **RAG + Tool-Calling** エージェントのテンプレート。  
 - OpenAI GPT-4o（or Azure） + ChromaDB  
 - LangChain で Retriever / Agent 統合  

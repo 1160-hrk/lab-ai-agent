@@ -19,6 +19,8 @@ numpy>=1.26.4          # ←★追加
 scipy>=1.13.0          # ←★追加
 
 # --- 補助 ---
+scholarly>=1.7.11
+requests>=2.32.3
 tqdm>=4.66.4
 fastapi>=0.110.0
 uvicorn[standard]>=0.29.0
@@ -28,6 +30,4 @@ openai>=1.23.0
 chromadb>=0.4.24
 langchain>=0.2.0
 python-dotenv>=1.0.1
-tqdm
-matplotlib
 jupyter

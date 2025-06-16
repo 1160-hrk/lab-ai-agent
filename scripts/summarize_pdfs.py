@@ -1,4 +1,8 @@
+import sys
 import os
+SCRIPT_DIR = os.path.dirname(__file__)
+sys.path.insert(0, os.path.abspath(os.path.join(SCRIPT_DIR, "..")))
+
 from pathlib import Path
 from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -22,6 +26,7 @@ custom_prompt = """
 4. 私の研究（赤外パルスによる状態制御）に関連する示唆
 5. 本研究の限界と将来の展望
 """
+
 
 def summarize_pdf(pdf_path: Path):
     print(f"\n=== {pdf_path.name} ===")
